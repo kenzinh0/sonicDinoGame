@@ -30,10 +30,18 @@ var checkDead = setInterval(function () {
     };
 }, 10);
 
-var temaEscuro = setInterval(function () {
+function temaEscuro() {
     document.getElementById("jogo").style.background="rgb(36, 35, 35)";
-}, 30000);
+};
 
-var temaClaro = setInterval(function () {
+function temaClaro() {
     document.getElementById("jogo").style.background="white";
-}, 40000)
+};
+
+var checkTeme = setInterval(function() {
+    temaEscuro()
+}, 10000);
+
+var checkWhite = setInterval(function() {
+    temaClaro()
+}, 20000)
