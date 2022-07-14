@@ -32,8 +32,8 @@ var checkDead = setInterval(function () {
 
 var temaEscuro = setInterval(function () {
     document.getElementById("jogo").style.background="rgb(36, 35, 35)";
-}, 5000);
+}, 30000);
 
 var temaClaro = setInterval(function () {
     document.getElementById("jogo").style.background="white";
-}, 10000)
+}, 40000)
